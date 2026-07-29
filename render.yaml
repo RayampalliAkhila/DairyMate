@@ -1,0 +1,24 @@
+# Render blueprint. Commit this at the REPO ROOT (next to DairyMate/).
+# In the dashboard: New > Blueprint, or set the same values by hand.
+services:
+  - type: web
+    name: dairymate
+    runtime: python
+
+    # requirements.txt lives one level down, not at the repo root.
+    rootDir: DairyMate
+
+    # TensorFlow needs well over 512 MB resident. Free and Starter will be
+    # killed on the first teat prediction. Drop to 'starter' only if you also
+    # switch to requirements-lite.txt (udder model only).
+    plan: standard
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+
+    envVars:
+      # 3.14 has no TensorFlow wheels. Keras 3.15 needs >= 3.11.
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: PYTHONUNBUFFERED
+        value: "1"
