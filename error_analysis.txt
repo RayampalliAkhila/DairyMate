@@ -1,8 +1,0 @@
-Total misclassified: 5 / 16 (all mastitis predicted as healthy; 0 healthy images misclassified)
-
-Most confidently-wrong examples (lowest P(mastitis)):
-{'filepath': '/home/claude/udder_pipeline/data/raw/mastitis/Mastitis-14-_jpg.rf.fa38f9de28374d6e55e0069310501658.jpg', 'true': 'mastitis', 'predicted': 'healthy', 'prob_mastitis': 0.47}
-{'filepath': '/home/claude/udder_pipeline/data/raw/mastitis/Mastitis-14-_jpg.rf.8da669929d09de0a57d2b3b0fc8681ae.jpg', 'true': 'mastitis', 'predicted': 'healthy', 'prob_mastitis': 0.5}
-{'filepath': '/home/claude/udder_pipeline/data/raw/mastitis/Mastitis-14-_jpg.rf.431373d8b27eb38f677d93ad91086811.jpg', 'true': 'mastitis', 'predicted': 'healthy', 'prob_mastitis': 0.556}
-{'filepath': '/home/claude/udder_pipeline/data/raw/mastitis/Mastitis-52-_jpg.rf.80ae5d49f3d0929aa173c1eb21afb7db.jpg', 'true': 'mastitis', 'predicted': 'healthy', 'prob_mastitis': 0.561}
-{'filepath': '/home/claude/udder_pipeline/data/raw/mastitis/Mastitis-33-_jpg.rf.5485a832166a6f5322f869cb67b4e163.jpg', 'true': 'mastitis', 'predicted': 'healthy', 'prob_mastitis': 0.587}
