@@ -1,0 +1,20 @@
+# Dairy Mate console — udder model only
+streamlit>=1.36
+pillow>=10.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# udder model
+opencv-python-headless>=4.8.0
+scikit-image==0.25.2
+scikit-learn>=1.3.0
+joblib>=1.3.0
+imbalanced-learn>=0.12.0
+
+# sign-in (Google OIDC via st.login)
+Authlib>=1.3.2
+
+# TensorFlow deliberately omitted: ~500 MB resident would be killed on a
+# 512 MB instance. The teat pages show "needs TensorFlow" instead of
+# crashing the process.
